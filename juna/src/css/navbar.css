@@ -1,0 +1,107 @@
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: purple;
+    padding: 2vh 4vw; 
+    background-color: transparent;
+  }
+  
+  .navbar img {
+    max-width: 4vw;
+    object-fit: contain; 
+    
+  
+  }
+  .right_nav img {
+    max-width: 1.5vw;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+ 
+  }
+  
+  .nav-item {
+    margin-right: 2vw; 
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+  }
+  .nav-link:hover{
+    color: #7A66DE;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 1vh 2vw; 
+  }
+  
+  .dropdown-content a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 0.5vh 0; 
+  }
+  
+  .search-bar,
+  .login-icon {
+    /* Styles pour la barre de recherche et l'icône de connexion */
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    height: 0.2vh;
+    width: 2.5vw; 
+    background-color: #fff;
+    margin-bottom: 0.5vh; 
+  }
+  
+  .right_nav {
+    display: flex;
+    gap: 4vw; 
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .navbar-nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100vw; /* Utilisation de vw pour la largeur */
+      background-color: #333;
+      padding: 2vh 4vw; /* Utilisation de vw et vh pour les paddings */
+    }
+  
+    .navbar-nav.open {
+      display: flex;
+    }
+  
+    .nav-item {
+      margin: 2vh 0; /* Utilisation de vh pour le margin vertical */
+    }
+  
+    .dropdown-content {
+      display: block;
+    }
+  }
+  
